@@ -1,0 +1,88 @@
+/* css/7-useForm.css */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.2);
+  }
+  
+  .form-submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.5rem;
+  }
+  
+  .form-submit:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  .form-submit:active {
+    transform: translateY(0);
+  }
+  
+  .form-error {
+    display: block;
+    margin-top: 0.25rem;
+    color: var(--error);
+    font-size: 0.85rem;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

@@ -1,0 +1,118 @@
+/* css/4-useArray.css */
+.array-container {
+    max-width: 400px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .array-container h3 {
+    text-align: center;
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+  }
+  
+  .array-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .array-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: var(--radius);
+    transition: all 0.2s;
+  }
+  
+  .array-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .edit-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  
+  .array-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+  
+  .array-input:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  
+  .add-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  .btn.edit {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .btn.remove {
+    background-color: #ff4444;
+    color: white;
+  }
+  
+  .btn.save {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn.cancel {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .btn.add {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem;
+  }
