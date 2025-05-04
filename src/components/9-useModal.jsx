@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../css/9-UseModal.css';
+import '../css/9-useModal.css';
 
 export default function UseModal() {
   const [isOpen, setIsOpen] = useState(false);
